@@ -1,59 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Habemus Deploy emblem: a gold dove with an olive sprig above a rising deploy arrow on a midnight field">
-  <title>Habemus Deploy — Rome Call Blessing Hook</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Habemus Deploy emblem: a gold dove ascending with an olive branch over a rising deploy chevron">
+  <title>Habemus Deploy</title>
   <defs>
-    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
-      <stop offset="0%" stop-color="#262a52"/>
-      <stop offset="100%" stop-color="#14152b"/>
+    <radialGradient id="bg" cx="50%" cy="38%" r="80%">
+      <stop offset="0%" stop-color="#2a2f5c"/>
+      <stop offset="100%" stop-color="#12132a"/>
     </radialGradient>
-    <radialGradient id="glow" cx="50%" cy="58%" r="50%">
-      <stop offset="0%" stop-color="#ffd77a" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#f0b44a" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#f0b44a" stop-opacity="0"/>
+    <radialGradient id="glow" cx="50%" cy="46%" r="42%">
+      <stop offset="0%" stop-color="#ffe6a6" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#ffe6a6" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffe7a8"/>
-      <stop offset="100%" stop-color="#e6a93c"/>
+      <stop offset="0%" stop-color="#ffe9ad"/>
+      <stop offset="55%" stop-color="#f3c462"/>
+      <stop offset="100%" stop-color="#d99428"/>
     </linearGradient>
   </defs>
 
-  <!-- field -->
-  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  <circle cx="256" cy="238" r="150" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="212" fill="none" stroke="#f3c462" stroke-width="4" opacity="0.8"/>
 
-  <!-- soft radial light (the "halo" as light, not a literal halo) -->
-  <circle cx="256" cy="300" r="190" fill="url(#glow)"/>
-
-  <!-- thin warm-gold circular border -->
-  <circle cx="256" cy="256" r="208" fill="none" stroke="url(#gold)" stroke-width="3" opacity="0.85"/>
-
-  <!-- rising deploy chevron + command caret emerging from the glow -->
-  <g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
-    <polyline points="206,372 256,330 306,372" stroke-width="14" opacity="0.95"/>
-    <polyline points="214,408 256,374 298,408" stroke-width="10" opacity="0.6"/>
-    <!-- monospace command caret ">" -->
-    <polyline points="232,452 250,440 232,428" stroke-width="7" opacity="0.7"/>
-    <line x1="262" y1="452" x2="290" y2="452" stroke-width="7" opacity="0.7"/>
+  <!-- rising deploy chevron (the "deployment ascending" base), behind the dove -->
+  <g fill="none" stroke="#f3c462" stroke-linecap="round" stroke-linejoin="round" opacity="0.42">
+    <polyline points="196,360 256,318 316,360" stroke-width="13"/>
+    <polyline points="210,398 256,366 302,398" stroke-width="9"/>
   </g>
 
-  <!-- geometric dove carrying an olive sprig -->
-  <g transform="translate(256,196)">
-    <!-- body + head -->
-    <path d="M -54 18 C -40 -10 -6 -26 26 -22 C 14 -34 16 -52 34 -54 C 28 -42 36 -34 50 -38 C 40 -26 40 -14 26 -10 C 44 -6 60 8 64 30 C 40 16 16 16 -2 26 C -22 36 -44 36 -64 28 C -54 26 -48 22 -54 18 Z"
-          fill="url(#gold)"/>
-    <!-- wing stroke -->
-    <path d="M -36 6 C -14 -8 14 -8 40 6" fill="none" stroke="#14152b" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
-    <!-- eye -->
-    <circle cx="34" cy="-32" r="3.2" fill="#14152b"/>
-    <!-- olive sprig in the beak -->
-    <g stroke="#bfe3a0" stroke-width="3" fill="#bfe3a0" stroke-linecap="round">
-      <line x1="50" y1="-44" x2="78" y2="-58"/>
-      <ellipse cx="66" cy="-56" rx="5" ry="2.6" transform="rotate(-28 66 -56)"/>
-      <ellipse cx="78" cy="-60" rx="5" ry="2.6" transform="rotate(-28 78 -60)"/>
-    </g>
+  <!-- DOVE ascending, wings spread upward -->
+  <g fill="url(#gold)">
+    <!-- left wing -->
+    <path d="M256 250
+             C 224 250 206 232 182 210
+             C 150 180 120 150 96 132
+             C 138 140 176 154 210 178
+             C 200 156 196 132 198 108
+             C 214 140 236 170 256 196 Z"/>
+    <!-- right wing (mirror of left about x=256) -->
+    <path d="M256 250
+             C 288 250 306 232 330 210
+             C 362 180 392 150 416 132
+             C 374 140 336 154 302 178
+             C 312 156 316 132 314 108
+             C 298 140 276 170 256 196 Z"/>
+    <!-- body: rounded breast tapering to the tail -->
+    <path d="M256 198
+             C 238 206 230 224 230 248
+             C 230 272 240 292 256 306
+             C 272 292 282 272 282 248
+             C 282 224 274 206 256 198 Z"/>
+    <!-- tail feathers (short fan) -->
+    <path d="M256 298 L238 330 L256 318 L274 330 Z"/>
+    <!-- head -->
+    <circle cx="256" cy="180" r="20"/>
+  </g>
+  <!-- beak -->
+  <path d="M256 162 L249 150 L263 150 Z" fill="#d99428"/>
+  <!-- eye -->
+  <circle cx="256" cy="178" r="3.2" fill="#12132a"/>
+
+  <!-- olive sprig held above the beak -->
+  <g stroke="#bfe3a0" stroke-width="3" fill="#bfe3a0" stroke-linecap="round">
+    <line x1="256" y1="150" x2="256" y2="120"/>
+    <ellipse cx="248" cy="132" rx="6" ry="3" transform="rotate(50 248 132)"/>
+    <ellipse cx="264" cy="128" rx="6" ry="3" transform="rotate(-50 264 128)"/>
+    <ellipse cx="256" cy="118" rx="6" ry="3"/>
   </g>
 
-  <!-- faint arc of monospace-like glyphs along the bottom -->
-  <g fill="url(#gold)" opacity="0.28" font-family="monospace" font-size="15" text-anchor="middle">
-    <text x="256" y="476">&#60; / &#62;  ·  { }  ·  ; &#47;&#47;  ·  =&#62;  ·  $</text>
+  <!-- monospace command caret ">_" as the deploy signature -->
+  <g fill="none" stroke="#f3c462" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.75">
+    <polyline points="232,446 246,436 232,426"/>
+    <line x1="256" y1="446" x2="280" y2="446"/>
   </g>
 </svg>
