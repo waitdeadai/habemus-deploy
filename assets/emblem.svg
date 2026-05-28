@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Habemus Deploy emblem: a gold dove with an olive sprig above a rising deploy arrow on a midnight field">
+  <title>Habemus Deploy — Rome Call Blessing Hook</title>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#262a52"/>
+      <stop offset="100%" stop-color="#14152b"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="58%" r="50%">
+      <stop offset="0%" stop-color="#ffd77a" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#f0b44a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f0b44a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe7a8"/>
+      <stop offset="100%" stop-color="#e6a93c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- field -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <!-- soft radial light (the "halo" as light, not a literal halo) -->
+  <circle cx="256" cy="300" r="190" fill="url(#glow)"/>
+
+  <!-- thin warm-gold circular border -->
+  <circle cx="256" cy="256" r="208" fill="none" stroke="url(#gold)" stroke-width="3" opacity="0.85"/>
+
+  <!-- rising deploy chevron + command caret emerging from the glow -->
+  <g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="206,372 256,330 306,372" stroke-width="14" opacity="0.95"/>
+    <polyline points="214,408 256,374 298,408" stroke-width="10" opacity="0.6"/>
+    <!-- monospace command caret ">" -->
+    <polyline points="232,452 250,440 232,428" stroke-width="7" opacity="0.7"/>
+    <line x1="262" y1="452" x2="290" y2="452" stroke-width="7" opacity="0.7"/>
+  </g>
+
+  <!-- geometric dove carrying an olive sprig -->
+  <g transform="translate(256,196)">
+    <!-- body + head -->
+    <path d="M -54 18 C -40 -10 -6 -26 26 -22 C 14 -34 16 -52 34 -54 C 28 -42 36 -34 50 -38 C 40 -26 40 -14 26 -10 C 44 -6 60 8 64 30 C 40 16 16 16 -2 26 C -22 36 -44 36 -64 28 C -54 26 -48 22 -54 18 Z"
+          fill="url(#gold)"/>
+    <!-- wing stroke -->
+    <path d="M -36 6 C -14 -8 14 -8 40 6" fill="none" stroke="#14152b" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+    <!-- eye -->
+    <circle cx="34" cy="-32" r="3.2" fill="#14152b"/>
+    <!-- olive sprig in the beak -->
+    <g stroke="#bfe3a0" stroke-width="3" fill="#bfe3a0" stroke-linecap="round">
+      <line x1="50" y1="-44" x2="78" y2="-58"/>
+      <ellipse cx="66" cy="-56" rx="5" ry="2.6" transform="rotate(-28 66 -56)"/>
+      <ellipse cx="78" cy="-60" rx="5" ry="2.6" transform="rotate(-28 78 -60)"/>
+    </g>
+  </g>
+
+  <!-- faint arc of monospace-like glyphs along the bottom -->
+  <g fill="url(#gold)" opacity="0.28" font-family="monospace" font-size="15" text-anchor="middle">
+    <text x="256" y="476">&#60; / &#62;  ·  { }  ·  ; &#47;&#47;  ·  =&#62;  ·  $</text>
+  </g>
+</svg>

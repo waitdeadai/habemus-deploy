@@ -1,0 +1,4 @@
+# The deploy journal is local runtime evidence, not source.
+.claude/deploy-journal.log
+deploy-journal.log
+*.log

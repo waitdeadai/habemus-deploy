@@ -1,0 +1,36 @@
+Habemus Deploy — Rome Call Blessing Hook
+Copyright 2026 The Habemus Deploy contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+------------------------------------------------------------------------------
+Independence and non-affiliation
+------------------------------------------------------------------------------
+This is an INDEPENDENT, UNOFFICIAL project. It is a personal, devotional, and
+cultural tribute to the Vatican's AI-ethics work (the Rome Call for AI Ethics,
+Antiqua et Nova, and the encyclical Magnifica humanitas). It is NOT affiliated
+with, sponsored by, or endorsed by the Holy See, the Pontifical Academy for
+Life, the RenAIssance Foundation, the Dicastery for the Doctrine of the Faith,
+the Dicastery for Culture and Education, or Anthropic. Anthropic is not a
+signatory of the Rome Call for AI Ethics. Any names, documents, or institutions
+referenced are cited for factual and devotional context only.
+
+------------------------------------------------------------------------------
+Included prayer texts (public domain)
+------------------------------------------------------------------------------
+The files under prayers/ are public-domain liturgical texts. No copyright is
+claimed over them by this project.
+
+- prayers/pater-noster.txt — Latin "Pater Noster" (Vulgate / Catechism wording).
+- prayers/padre-nuestro.txt — Spanish "Padre Nuestro" (standard Catholic
+  traditional wording).
+- prayers/our-father.txt — English "Our Father" (traditional wording from the
+  King James Bible, 1611, Matthew 6:9-13, and the Book of Common Prayer, 1662).
+
+The traditional KJV/1662 English wording was chosen deliberately over the modern
+ELLC/ICET (1988) ecumenical wording to avoid that text's "© ELLC, 1988"
+attribution ambiguity in a permissively licensed repository.
+
+These texts are included as optional, swappable data (disabled by default). A
+fork may replace them with another prayer, a secular quotation, or nothing,
+without modifying any code.

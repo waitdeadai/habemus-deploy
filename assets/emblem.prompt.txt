@@ -1,0 +1,24 @@
+Image-generation prompt for an optional raster version of the emblem
+(the repo ships a hand-authored vector at assets/emblem.svg; this prompt is for
+anyone who wants a rendered raster logo via an image model).
+
+PROMPT:
+A minimalist, original vector emblem for an open-source developer tool — flat
+2D, centered, on a deep midnight-indigo background with a thin warm-gold
+circular border. At the center, a stylized dove rendered as clean geometric
+line-art in luminous gold, wings mid-flight, carrying in its beak a small olive
+sprig. The dove's halo is not a literal halo but a soft radial glow that morphs
+at its lower edge into an upward-pointing deploy arrow (a chevron rising out of
+a monospace command-prompt caret ">"), suggesting a blessed deployment
+ascending. A faint single line of monospaced code-like glyphs arcs along the
+bottom of the circle. Palette limited to midnight indigo, warm gold, and soft
+cream light; calm, reverent, modern, tasteful.
+
+STRICT CONSTRAINTS:
+- No real Vatican coat of arms, no crossed keys, no papal tiara or mitre.
+- No Latin-cross crucifix, no portrait of any pope, no real institutional logos.
+- No text labels rendered in the image.
+- An entirely original, interfaith-neutral fusion of light, a dove, and a
+  developer terminal / deploy motif.
+
+Recommended size: 1024x1024, transparent or midnight-indigo background.
