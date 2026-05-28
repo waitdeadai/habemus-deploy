@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/emblem.svg" alt="Habemus Deploy emblem" width="180"/>
+  <img src="assets/emblem.png" alt="Habemus Deploy emblem" width="180"/>
 
   # Habemus Deploy — Rome Call Blessing Hook
 
